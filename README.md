@@ -126,13 +126,13 @@ x = np.array([
 
 y = np.array([95, 135, 180])
 
-print("X:")
-print(X)
+print("x:")
+print(x)
 
 print("y:")
 print(y)
 
-print("X shape:", x.shape)
+print("x shape:", x.shape)
 print("y shape:", y.shape)
 ```
 
