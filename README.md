@@ -42,9 +42,9 @@ A machine learning model can be viewed as a function that transforms input data 
 
 A simple linear model is represented by:
 
-\[
+$$
 \hat{y} = wx + b
-\]
+$$
 
 This equation introduces the relationship between input values, model parameters, and predictions. Although simple, it provides an intuitive starting point for understanding more advanced learning algorithms.
 
