@@ -109,7 +109,7 @@ The numbers above are illustrative and do not represent real estate market data.
 
 In supervised Machine Learning, we commonly use the following notation:
 
-- `X`: input features.
+- `x`: input features.
 - `y`: actual target values.
 - `y_hat`: predictions produced by a model.
 
@@ -118,7 +118,7 @@ For example:
 ```python
 import numpy as np
 
-X = np.array([
+x = np.array([
     [70, 2, 10],
     [95, 3, 5],
     [120, 4, 2]
@@ -132,14 +132,14 @@ print(X)
 print("y:")
 print(y)
 
-print("X shape:", X.shape)
+print("X shape:", x.shape)
 print("y shape:", y.shape)
 ```
 
 Expected output:
 
 ```text
-X:
+x:
 [[ 70   2  10]
  [ 95   3   5]
  [120   4   2]]
@@ -147,13 +147,13 @@ X:
 y:
 [ 95 135 180]
 
-X shape: (3, 3)
+x shape: (3, 3)
 y shape: (3,)
 ```
 
 ### Understanding Array Shapes
 
-For `X.shape == (3, 3)`:
+For `x.shape == (3, 3)`:
 
 - The first number represents the number of samples.
 - The second number represents the number of features.
@@ -165,7 +165,7 @@ For `y.shape == (3,)`, there are three target values.
 In general, if a dataset has `n` samples and `p` features:
 
 ```python
-X.shape == (n, p)
+x.shape == (n, p)
 ```
 
 A one-dimensional target array commonly has this shape:
@@ -194,20 +194,20 @@ Several useful properties of NumPy arrays are:
 Example:
 
 ```python
-print("Shape:", X.shape)
-print("Dimensions:", X.ndim)
-print("Number of elements:", X.size)
-print("Data type:", X.dtype)
+print("Shape:", x.shape)
+print("Dimensions:", x.ndim)
+print("Number of elements:", x.size)
+print("Data type:", x.dtype)
 ```
 
 ### Array Indexing
 
 ```python
 # Select the first sample
-first_sample = X[0, :]
+first_sample = x[0, :]
 
 # Select the first feature from all samples
-areas = X[:, 0]
+areas = x[:, 0]
 
 print("First sample:", first_sample)
 print("Areas:", areas)
@@ -215,8 +215,8 @@ print("Areas:", areas)
 
 Explanation:
 
-- `X[0, :]` selects the first row.
-- `X[:, 0]` selects the first column.
+- `x[0, :]` selects the first row.
+- `x[:, 0]` selects the first column.
 - Python indexing starts at zero.
 
 These concepts are essential when working with datasets in NumPy, Pandas, and Machine Learning libraries.
@@ -235,7 +235,7 @@ We can represent a model as:
 
 Where:
 
-- `X` represents the input features.
+- `x` represents the input features.
 - `f` represents the model function.
 - `θ` represents the model parameters.
 - `y_hat` represents the predicted output.
@@ -434,7 +434,7 @@ Before moving to Day 2, make sure you can:
 
 - [ ] Explain Machine Learning in your own words.
 - [ ] Identify samples, features, and targets.
-- [ ] Understand `X`, `y`, and `y_hat`.
+- [ ] Understand `x`, `y`, and `y_hat`.
 - [ ] Interpret NumPy array shapes.
 - [ ] Explain what a model and its parameters are.
 - [ ] Distinguish prediction from training.
@@ -444,7 +444,7 @@ Before moving to Day 2, make sure you can:
 
 ## 13. Next Lesson
 
-**Week 1 — Day 2: Statistics for Machine Learning**
+**Day 2: Statistics for Machine Learning**
 
 Topics:
 
