@@ -2,9 +2,6 @@
 
 
 ---
-
-# Week 1 — Day 1: Machine Learning Foundations
-
 ## 1. Learning Objectives
 
 By the end of this lesson, you should be able to:
